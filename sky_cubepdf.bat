@@ -14,7 +14,9 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-%~dp0cubepdf-4.2.0-x64.exe /lang=japanese /verysilent /sp- /nocancel /norestart /suppressmsgboxes /nolaunch
+%~dp0cubepdf-4.2.0-x64.exe /lang=japanese /verysilent /sp- /nocancel /norestart /suppressmsgboxes /allusers
+
+del "%HOMEDRIVE%%HOMEPATH%\Desktop\CubePDF ユーザーマニュアル.url"
 
 pause
 
